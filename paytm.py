@@ -86,4 +86,4 @@ wndw = Window.orderBy(col("avg_WDSP").desc())
 wind = wind.withColumn("rank", rank().over(wndw))
 wind.filter(wind.rank == 2).show()
 
-#Wind
+#Windding
